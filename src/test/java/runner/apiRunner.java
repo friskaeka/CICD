@@ -1,0 +1,18 @@
+package runner;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        glue = {"stepDef"},
+        features = {"src/test/java/features"},
+        tags = "@api",
+        plugin = {"pretty", "html:reports/cucumber.html", "json:reports/cucumber-json"},
+        monochrome = true
+)
+
+public class apiRunner {
+
+}
