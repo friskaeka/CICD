@@ -51,6 +51,10 @@ jobs:
     #eksekusi test gradle command for running cucumber test
     - name : Execute Test
       run : ./gradlew apiTest
+
+    #eksekusi test gradle command for running web test
+    - name : Execute Test
+      run : ./gradlew webTest
       
     #archive test result
     - name : Archive test result 
